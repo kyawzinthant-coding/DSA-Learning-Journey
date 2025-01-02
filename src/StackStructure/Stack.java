@@ -27,6 +27,16 @@ public class Stack<T> {
         }
     }
 
+    public T peek() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty. Nothing to peek.");
+            return null;
+        } else {
+            return stackArray[top];
+        }
+    }
+
+
     public boolean isFull() {
         return top == capacity-1;
     }
