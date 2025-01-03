@@ -86,7 +86,7 @@ After Rotation
            \
             50
             
-           
+            
       40
      /  \
     30   50
