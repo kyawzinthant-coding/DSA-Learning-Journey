@@ -17,21 +17,21 @@ public class DeletionBST {
         return x > y ? x + 1 : y + 1;
     }
 
-    static Node InPre ( Node p ) {
+    static Node InPre (Node p ) {
         while ( p != null & p.Lchild != null) {
             p = p.Lchild;
         }
         return p;
     }
 
-    static  Node InSuccess( Node p ) {
+    static Node InSuccess(Node p ) {
         while ( p != null & p.Rchild != null) {
             p = p.Rchild;
         }
         return p;
     }
 
-    static  Node deleteNode(Node rootN , int key ) {
+    static Node deleteNode(Node rootN , int key ) {
 
         Node q;
         if (rootN == null) {

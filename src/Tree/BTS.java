@@ -30,7 +30,7 @@ public class BTS {
             }
         }
 
-        p = new Node (key);
+        p = new Node(key);
         if (p.data < r.data) {
             r.Lchild = p;
         }else if ( p.data > r.data) {
@@ -38,7 +38,7 @@ public class BTS {
         }
     }
 
-    public static Node RInsert( Node p , int key ) {
+    public static Node RInsert(Node p , int key ) {
         Node t;
         if ( p == null ) {
             t = new Node(key);
@@ -54,7 +54,7 @@ public class BTS {
         return p;
     }
 
-    public static Node RSearch ( int value, Node root) {
+    public static Node RSearch (int value, Node root) {
 
         if ( root == null || value == root.data) {
             return root;

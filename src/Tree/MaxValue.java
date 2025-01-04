@@ -21,7 +21,6 @@ public class MaxValue {
          BTS.RInsert(root, 40);
          BTS.RInsert(root, 50);
 
-
          int value = maxValue(root);
 
         System.out.println(5/2);

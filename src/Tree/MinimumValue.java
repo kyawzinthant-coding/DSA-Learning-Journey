@@ -5,12 +5,12 @@ import static Tree.BTS.root;
 public class MinimumValue {
 
 
-    public static  int minValue ( Node root ) {
+    public static  int minValue ( Tree.Node root ) {
 
         if ( root == null) {
             return -1;
         }
-        Node curr = root;
+        Tree.Node curr = root;
 
         while ( curr.Lchild != null) {
             curr = curr.Lchild;
@@ -22,7 +22,7 @@ public class MinimumValue {
 
     public static void main(String[] args) {
 
-        Node rootNode =   BTS.RInsert(root,10);
+        Tree.Node rootNode =   BTS.RInsert(root,10);
         BTS.RInsert(rootNode,5);
         BTS.RInsert(rootNode,20);
         BTS.RInsert(rootNode,8);

@@ -4,7 +4,7 @@ import StackStructure.Stack;
 
 public class BSTFromPreOrder {
 
-    static Node CratePre( int[] pre) {
+    static Node CratePre(int[] pre) {
         Stack<Node> stk = new Stack<>(pre.length);
         int i = 0;
         Node rootNode = new Node(pre[i++]);

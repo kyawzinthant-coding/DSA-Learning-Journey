@@ -2,7 +2,7 @@ package Tree;
 
 public class Levelorder {
 
-    void levelOrder ( Node root  ) {
+    public void levelOrder (Node root  ) {
         Queue q = new Queue(100);
         System.out.print(root.data + " ");
         q.enqueue(root);
