@@ -1,6 +1,6 @@
 package Heap;
 
-public class InsertHead {
+public class InsertHeap {
 
     public static void insert ( int[] A , int n ) {
         int temp = A[n];
@@ -12,8 +12,6 @@ public class InsertHead {
         }
 
         A[i] = temp;
-
-
     }
     public static void main(String[] args) {
         int[] arr = {0,10,20,30,25,5,40,35};
