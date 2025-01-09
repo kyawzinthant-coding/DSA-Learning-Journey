@@ -16,6 +16,8 @@ public class InsertHeap {
     public static void main(String[] args) {
         int[] arr = {0,10,20,30,25,5,40,35};
 
+        System.out.println( "length" + arr.length);
+
         for (int i =2 ; i < arr.length ; i++) {
             insert(arr,i);
         }
