@@ -7,40 +7,39 @@ class Node<T> {
 
 public class LinkedListQueue<T> {
     Node<T> front, rear;
-    int size;
 
     public LinkedListQueue() {
         this.front = this.rear = null;
-        this.size = 0;
     }
 
     public void enqueue(T value) {
         Node<T> newNode = new Node<>();
 
-        newNode.data =value;
+        newNode.data = value;
         newNode.next = null;
-        if ( front == null) {
+        if (front == null) {
             front = rear = newNode;
-        }else {
+        } else {
             rear.next = newNode;
             rear = newNode;
         }
     }
 
-    public void dequeue () {
-        Node<T> p = new Node<>();
-        if ( front == null ) {
+    public T dequeue() {
+        if (front == null) {
             System.out.println("Queue is empty");
-        }{
-            p = front;
+        }
+        {
+            T x = front.data;
             front = front.next;
+            return x;
         }
     }
 
     public void Display() {
         Node<T> p = front;
 
-        while (p != null){
+        while (p != null) {
             System.out.print(p.data + " ");
             p = p.next;
         }

@@ -1,5 +1,7 @@
 package GraphD;
 
+import java.util.Arrays;
+
 public class NumberOfIslands {
 
     public static  void dfs( char[][] grid , int r , int c ) {
@@ -45,6 +47,23 @@ public class NumberOfIslands {
                 {'0', '0', '0', '1', '1'}
         };
 
-        System.out.println(numIslands(grid));
+//        System.out.println(numIslands(grid));
+
+
+        int[] arr = {1,2,3};
+        int k = 2;
+        int[] result = new int[k];
+
+        System.out.println(arr.length);
+
+
+        int idx = 0 ;
+
+        for ( int i = arr.length-1; i >= arr.length-k ; i-- ) {
+            result[idx++] = arr[i];
+        }
+
+        System.out.println(Arrays.toString(result));
+
     }
 }
